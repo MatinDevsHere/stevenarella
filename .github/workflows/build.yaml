@@ -40,7 +40,7 @@ jobs:
       - name: Check formatting
         run: cargo fmt --all -- --check
       - name: Upload binary
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: stevenarella-linux
           path: target/release/stevenarella
@@ -85,7 +85,7 @@ jobs:
       - name: Check formatting
         run: cargo fmt --all -- --check
       - name: Upload binary
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: stevenarella.exe
           path: target/release/stevenarella.exe
@@ -140,7 +140,7 @@ jobs:
           cd target/release/bundle/osx
           zip -r Stevenarella.app.zip Stevenarella.app
       - name: Upload binary
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Stevenarella.app.zip
           path: target/release/bundle/osx/Stevenarella.app.zip
@@ -174,7 +174,7 @@ jobs:
           cargo install wasm-bindgen-cli
           wasm-pack build --dev
       - name: Upload binary
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: stevenarella.wasm
           path: target/wasm32-unknown-unknown/debug/stevenarella.wasm
@@ -187,4 +187,3 @@ jobs:
             target/wasm32-unknown-unknown/debug/stevenarella.wasm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

@@ -1,4 +1,4 @@
-# Stevenarella
+# Stevenarella (lalala)
 [![Build](https://github.com/iceiix/stevenarella/actions/workflows/build.yaml/badge.svg)](https://github.com/iceiix/stevenarella/actions/workflows/build.yaml)
 
 Multi-protocol Minecraft-compatible client written in Rust.
